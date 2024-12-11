@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://rc1d-u65z2n58k5x48jw0.mdb.yandexcloud.net:6432/local_chomik
+    username: local_chomik
+    password: jxn-RWL-Zb2-giz
+    hikari:
+      maximum-pool-size: 20
+
+balancer:
+  url: http://localhost:17006
