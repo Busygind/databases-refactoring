@@ -1,0 +1,13 @@
+server:
+  port: 17001
+
+spring:
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  profiles:
+    active: ${ENVIRONMENT}
