@@ -1,3 +1,10 @@
+payment:
+  service:
+    host: localhost:8052
+  bank:
+    account:
+      id: 123213
+
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
@@ -6,6 +13,3 @@ spring:
     password: postgres
     hikari:
       maximum-pool-size: 20
-
-balancer:
-  url: http://localhost:17006

@@ -22,7 +22,7 @@ class TransactionService(
 ) {
     private val restTemplate: RestTemplate = RestTemplate()
 
-    fun save(createTransactionRequest: CreateTransactionRequest) =
+    fun save(createTransactionRequest: CreateTransactionRequest): Transaction =
         transactionRepository.save(
             Transaction(
                 charge = createTransactionRequest.charge,
@@ -44,7 +44,7 @@ class TransactionService(
             processTransactionRequest.cvv
         ) ?: throw IllegalArgumentException("Account with input data doesn't exists")
 
-        accountService.transferMoney(TransferMoneyRequest(accountFrom.id, transaction.accountTo, transaction.charge))
+        accountService.transferMoney(TransferMoneyRequest(accountFrom.id ?: "-1", transaction.accountTo, transaction.charge))
 
         val updatedTransaction = transaction.copy(status = TransactionStatus.SUCCESS)
 
