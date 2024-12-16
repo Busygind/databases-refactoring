@@ -1,0 +1,15 @@
+payment:
+  service:
+    host: localhost:8052
+  bank:
+    account:
+      id: 123213
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    hikari:
+      maximum-pool-size: 20

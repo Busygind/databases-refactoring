@@ -1,0 +1,26 @@
+server:
+  port: 8052
+
+payment:
+  service:
+    host:
+  bank:
+    account:
+      id:
+
+spring:
+  application:
+    name: payment
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+  profiles:
+    active: ${ENVIRONMENT}
+
+
+bank:
+  mock:
+    url:
