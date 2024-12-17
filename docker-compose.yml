@@ -1,6 +1,6 @@
 services:
-  chomik-payment:
-    container_name: chomik-payment
+  payment-module:
+    container_name: payment-module
     image: openjdk:17-oracle
     ports:
       - 17004:17004

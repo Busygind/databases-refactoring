@@ -3,10 +3,11 @@ plugins {
     kotlin("plugin.spring") version "1.9.25"
     id("org.springframework.boot") version "3.4.0"
     id("io.spring.dependency-management") version "1.1.6"
+    kotlin("plugin.jpa") version "1.9.25"
 }
 
-group = "com.payment.mock"
-version = "1.0-SNAPSHOT"
+group = "com.gadget.depo.product"
+version = "unspecified"
 
 repositories {
     mavenCentral()
@@ -15,12 +16,11 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("org.liquibase:liquibase-core:4.24.0")
-    implementation(project(":payment-mock-model"))
-    implementation(project(":payment-mock-client"))
-    runtimeOnly("org.postgresql:postgresql")
+    implementation("org.mapstruct:mapstruct:1.5.5.Final")
+    implementation("org.mapstruct:mapstruct-processor:1.5.5.Final")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 
