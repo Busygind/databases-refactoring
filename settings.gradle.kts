@@ -3,3 +3,5 @@ plugins {
 }
 rootProject.name = "databases-refactoring"
 include("payment-mock", "payment-mock-client", "payment-mock-model", "payment-module", "product-management-module")
+include("order-module")
+include("product-management-model")

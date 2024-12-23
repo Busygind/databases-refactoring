@@ -1,8 +1,8 @@
 package com.gadget.depo.product.controller
 
 import com.gadget.depo.product.domain.UserWishlistItem
-import com.gadget.depo.product.domain.dto.UserWishlistItemDto
-import com.gadget.depo.product.domain.dto.toWishlist
+import com.gadget.depo.product.domain.toWishlist
+import com.gadget.depo.product.dto.UserWishlistItemDto
 import com.gadget.depo.product.service.UserWishlistService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

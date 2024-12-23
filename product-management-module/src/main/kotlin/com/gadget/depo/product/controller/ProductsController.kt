@@ -1,7 +1,7 @@
 package com.gadget.depo.product.controller
 
-import com.gadget.depo.product.domain.dto.ProductsDto
-import com.gadget.depo.product.domain.dto.SaveProductsRequest
+import com.gadget.depo.product.dto.ProductsDto
+import com.gadget.depo.product.dto.SaveProductsRequest
 import com.gadget.depo.product.extension.toDto
 import com.gadget.depo.product.service.ProductService
 import jakarta.validation.Valid

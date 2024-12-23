@@ -1,6 +1,6 @@
-package com.gadget.depo.product.domain.dto
+package com.gadget.depo.product.dto
 
-import com.gadget.depo.product.domain.AdvertStatus
+import com.gadget.depo.product.dto.enums.AdvertStatus
 
 data class AdvertDto(
     val id: String,
@@ -13,4 +13,3 @@ data class AdvertDto(
     val sellerAddressId: String,
     val description: String? = null
 )
-

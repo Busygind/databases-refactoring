@@ -1,7 +1,7 @@
 package com.gadget.depo.product.extension
 
 import com.gadget.depo.product.domain.Products
-import com.gadget.depo.product.domain.dto.ProductsDto
+import com.gadget.depo.product.dto.ProductsDto
 
 fun Products.toDto(): ProductsDto = ProductsDto(
     id = this.id!!,
