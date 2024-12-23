@@ -1,7 +1,7 @@
 package com.gadget.depo.product.service
 
 import com.gadget.depo.product.domain.Products
-import com.gadget.depo.product.domain.dto.SaveProductsRequest
+import com.gadget.depo.product.dto.SaveProductsRequest
 import com.gadget.depo.product.repository.storage.ProductsRepository
 import com.gadget.depo.product.service.mapper.ProductsMapper
 import org.springframework.stereotype.Service

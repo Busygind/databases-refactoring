@@ -1,7 +1,7 @@
 package com.gadget.depo.product.service.mapper
 
 import com.gadget.depo.product.domain.Products
-import com.gadget.depo.product.domain.dto.SaveProductsRequest
+import com.gadget.depo.product.dto.SaveProductsRequest
 
 import org.mapstruct.Mapper
 import org.springframework.stereotype.Component

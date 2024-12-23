@@ -1,6 +1,6 @@
 package com.gadget.depo.product.controller
 
-import com.gadget.depo.product.domain.dto.CreateSaleRequest
+import com.gadget.depo.product.dto.CreateSaleRequest
 import com.gadget.depo.product.service.SalesService
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

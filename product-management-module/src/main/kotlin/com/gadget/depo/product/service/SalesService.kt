@@ -1,7 +1,7 @@
 package com.gadget.depo.product.service
 
 import com.gadget.depo.product.domain.Sales
-import com.gadget.depo.product.domain.dto.CreateSaleRequest
+import com.gadget.depo.product.dto.CreateSaleRequest
 import com.gadget.depo.product.repository.sales.SalesRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional

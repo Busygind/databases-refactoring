@@ -1,7 +1,7 @@
 package com.gadget.depo.product.service
 
 import com.gadget.depo.product.domain.Advert
-import com.gadget.depo.product.domain.dto.SaveAdvertRequest
+import com.gadget.depo.product.dto.SaveAdvertRequest
 import com.gadget.depo.product.repository.storage.AdvertRepository
 import com.gadget.depo.product.service.mapper.AdvertMapper
 import org.springframework.stereotype.Service

@@ -1,4 +1,4 @@
-package com.gadget.depo.product.domain
+package com.gadget.depo.product.dto.enums
 
 enum class Brand {
     SAMSUNG,

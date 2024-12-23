@@ -1,7 +1,7 @@
 package com.gadget.depo.product.extension
 
 import com.gadget.depo.product.domain.Advert
-import com.gadget.depo.product.domain.dto.AdvertDto
+import com.gadget.depo.product.dto.AdvertDto
 
 fun Advert.toDto(): AdvertDto = AdvertDto(
     id = this.id!!,

@@ -1,5 +1,6 @@
 package com.gadget.depo.product.domain
 
+import com.gadget.depo.product.dto.enums.AdvertStatus
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.EnumType

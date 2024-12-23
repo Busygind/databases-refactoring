@@ -1,7 +1,7 @@
 package com.gadget.depo.product.controller
 
-import com.gadget.depo.product.domain.dto.AdvertDto
-import com.gadget.depo.product.domain.dto.SaveAdvertRequest
+import com.gadget.depo.product.dto.AdvertDto
+import com.gadget.depo.product.dto.SaveAdvertRequest
 import com.gadget.depo.product.extension.toDto
 import com.gadget.depo.product.service.AdvertService
 import jakarta.validation.Valid

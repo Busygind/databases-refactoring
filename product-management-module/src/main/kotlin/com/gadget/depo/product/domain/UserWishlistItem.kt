@@ -1,5 +1,6 @@
 package com.gadget.depo.product.domain
 
+import com.gadget.depo.product.dto.UserWishlistItemDto
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.FetchType
@@ -25,4 +26,9 @@ data class UserWishlistItem(
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "product_id", nullable = false, insertable = false, updatable = false)
     val product: Products? = null,
+)
+
+fun UserWishlistItemDto.toWishlist() = UserWishlistItem(
+    userId = this.userId,
+    productId = this.productId
 )
